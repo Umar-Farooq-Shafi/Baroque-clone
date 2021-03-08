@@ -1,23 +1,58 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 
+import Box from './Sale/Box';
+import Box2 from './Sale/Box2';
+import Box3 from './Sale/Box3';
+
+import image from './Sale/images/baroq.jpg';
+import image1 from './Sale/images/Mask_Group.png';
+import image2 from './Sale/images/shipment-icon.png';
+import image3 from './Sale/images/stiching-icon.png';
+import image4 from './Sale/images/sadaf.jpg';
+import image5 from './Sale/images/model.jpg';
+import image6 from './Sale/images/banner.jpg';
+import image7 from './Sale/images/banner2.jpg';
+import image8 from './Sale/images/banner3.jpg';
+import image9 from './Sale/images/free.webp';
+
+import HomeStyle from './Home.module.css';
+
 const Home = () => (
-  <div>
-    <h1>Hello, world!</h1>
-    <p>Welcome to your new single-page application, built with:</p>
-    <ul>
-      <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
-      <li><a href='https://facebook.github.io/react/'>React</a> and <a href='https://redux.js.org/'>Redux</a> for client-side code</li>
-      <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
-    </ul>
-    <p>To help you get started, we've also set up:</p>
-    <ul>
-      <li><strong>Client-side navigation</strong>. For example, click <em>Counter</em> then <em>Back</em> to return here.</li>
-      <li><strong>Development server integration</strong>. In development mode, the development server from <code>create-react-app</code> runs in the background automatically, so your client-side resources are dynamically built on demand and the page refreshes when you modify any file.</li>
-      <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled, and your <code>dotnet publish</code> configuration produces minified, efficiently bundled JavaScript files.</li>
-    </ul>
-    <p>The <code>ClientApp</code> subdirectory is a standard React application based on the <code>create-react-app</code> template. If you open a command prompt in that directory, you can run <code>npm</code> commands such as <code>npm test</code> or <code>npm install</code>.</p>
+  <>
+    <img  className={HomeStyle.banner} src={image} alt="banner"/>
+    <br></br>
+    <br></br>
+    <br></br>
+    <div className={HomeStyle.service}>
+      <Box image={image1}  alt="banner" heading='Customized Stictching' para='You can use perfect size to be stitched to your perfect fit by using our custom stitching'/>
+      <Box image={image2}  alt="banner" heading='Customized Stictching' para='You can use perfect size to be stitched to your perfect fit by using our custom stitching'/>
+      <Box image={image3}  alt="banner" heading='Customized Stictching' para='You can use perfect size to be stitched to your perfect fit by using our custom stitching'/>
+    </div>
+
+    <div className={HomeStyle.row}>
+      <div className={HomeStyle.col1}>
+        <Box2 image={image4} alt="model" text="FUCHSIA LAWN" button="Shop now"/>
+      </div><br></br>
+      <div className={HomeStyle.col2}>
+        <Box2 image={image5} alt="model" text="VELVET" button="Shop now"/>
+    </div>
+
+    <div className={HomeStyle.row}>
+      <div className={HomeStyle.col}>
+      <Box3 image={image6} text='UNSTITCHED' button='Shop now'/>
+      </div>
+      <div className={HomeStyle.col}>
+      <Box3 image={image7} text='UNSTITCHED' button='Shop now'/>
+      </div>
+      <div className={HomeStyle.col}>
+      <Box3 image={image8} text='UNSTITCHED' button='Shop now'/>
+      </div>
+    </div>
+
+    <img className="free" src={image9} alt='free shiping'/>
   </div>
+  </>
 );
 
 export default connect()(Home);

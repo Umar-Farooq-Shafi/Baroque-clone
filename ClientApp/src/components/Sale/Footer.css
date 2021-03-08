@@ -1,0 +1,39 @@
+.container {
+ 
+    display: flex;
+    justify-content: center;
+    padding: 30px 40px;
+}
+
+.main-cont {
+    background-color:#ffd2a4;
+   
+}
+
+.pa{
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.h {
+    text-align: center;
+}
+
+.in {
+    width: 300px;
+    border: 2px solid black;
+}
+
+.btn {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+  
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid black;
+    color: #3d3d3d;
+}
