@@ -68,13 +68,6 @@ const Home = () => (
       <img src="https://cdn.shopify.com/s/files/1/2277/5269/t/49/assets/Free-Shipping-web-1.jpg?v=6177872171403013179"/>
     </div>
 
-
-
-
-
-
-
-
   </>
 );
 
