@@ -39,7 +39,7 @@ const NavbarMenu = () => {
       </div>
 
 
-      <div className="flex flex-row items-center bg-gray-50 shadow-md sticky top-0  h-28">
+      <div className="flex flex-row items-center lg:visible sm:invisible bg-gray-50 shadow-md sticky top-0  h-28">
         <Link to="/" className="pl-7 logo lg:ml-10">
           <img className="w-2/5 h-auto" src="https://cdn.shopify.com/s/files/1/2277/5269/t/49/assets/baroque_logo-01.svg?v=3325848057508312822" alt="logo" />
         </Link>
@@ -71,7 +71,6 @@ const NavbarMenu = () => {
 
         {/* Desktop Nav */}
 
-        <div className="flex justify-around lg:visible sm:invisible">
           <Link to="/sale" className="text-sm  hover:bg-red-500 rounded-full py-3 px-4 font-normal text-gray-800 transition-all hover:text-white">SALE</Link>
           <Link to="/collections" className="text-sm hover:bg-red-500 rounded-full py-3 px-4 font-normal text-gray-800 transition-all hover:text-white">COLLECTIONS</Link>
           <Link to="/unstitched" className="text-sm hover:bg-red-500 rounded-full py-3 px-4 font-normal text-gray-800 transition-all hover:text-white">UNSTITCHED</Link>
@@ -79,9 +78,7 @@ const NavbarMenu = () => {
           <Link to="/dupattas" className="text-sm hover:bg-red-500 rounded-full py-3 px-4 font-normal text-gray-800 transition-all hover:text-white">DUPATTAS</Link>
           <Link to="/bottoms" className="text-sm hover:bg-red-500 rounded-full py-3 px-4 font-normal text-gray-800 transition-all hover:text-white">BOTTOMS</Link>
 
-          <div className="px-3 py-3.5 "><BiSearch /></div>
-
-        </div>
+          <div className="pl-5 py-3.5 "><BiSearch /></div>
 
       </div>
     </>

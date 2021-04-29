@@ -4,6 +4,9 @@ import {Link} from 'react-router-dom';
 
 import {FiChevronRight} from 'react-icons/fi';
 
+import data from '../../store/data';
+import SaleDetails from './SaleDetails';
+
 const Sale = () => {
     const [isLoading, setIsLoading] = React.useState(false);
 
@@ -29,14 +32,16 @@ const Sale = () => {
                     <hr className="m-5"/>
                 </div>
                 
-                <div className="md:container md:mx-auto pt-5 grid grid-cols-3 gap-4 px-28">
-                    <div className="">6</div>
+                <div className="md:container md:mx-auto pt-5 grid grid-cols-3 gap-4">
+                    <div className=""><img src={data.pic}/></div>
                     <div className="col-span-2">
-                    <div class="grid grid-cols-3 gap-4">
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                        </div>
+                    <div className="grid grid-cols-3 gap-4">
+                        {
+                            data.map((d, i) => <SaleDetails 
+                            oldPic={d.oldPic} pic={d.pic}
+                            name={d.name} oldPrice={d.oldPrice} price={d.price} key={i} />)
+                        }                               
+                    </div>
                     </div>
                 </div>
             </div>
