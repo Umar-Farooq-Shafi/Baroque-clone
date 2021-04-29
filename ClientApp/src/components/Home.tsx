@@ -51,12 +51,12 @@ const Home = () => (
         <p className="mt-4 text-m font-light  font-serif">FUCHSIA LAWN</p>
         <a className="font-bold underline text-sm " href="#">SHOP NOW</a>
       </div>
-      <div className="text-center mt-6 md:mt-6">
+      <div className="text-center mt-6 md:mt-0">
         <img src="https://cdn.shopify.com/s/files/1/2277/5269/files/banner_50a102d8-c13a-47fb-9895-9dae8dfb1f00.jpg?v=1618827777" />
         <p className="mt-4 text-m font-light  font-serif">SWISS VOILE</p>
         <a className="font-bold underline text-sm" href="#">SHOP NOW</a>
       </div>
-      <div className="text-center mt-6 md:mt-6">
+      <div className="text-center mt-6 md:mt-0">
         <img src="https://cdn.shopify.com/s/files/1/2277/5269/files/bannerl.jpg?v=1618654254" />
         <p className="mt-4 text-m font-light  font-serif">SWISS VOILE</p>
         <a className="font-bold underline text-sm" href="#">SHOP NOW</a>
@@ -65,7 +65,7 @@ const Home = () => (
 
 
     <div className="mt-14 object-cover">
-      <img src="https://cdn.shopify.com/s/files/1/2277/5269/t/49/assets/Free-Shipping-web-1.jpg?v=6177872171403013179"/>
+      <img src="https://cdn.shopify.com/s/files/1/2277/5269/t/49/assets/Free-Shipping-web-1.jpg?v=6177872171403013179" />
     </div>
 
   </div>
