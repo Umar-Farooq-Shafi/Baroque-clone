@@ -1,5 +1,4 @@
-var data = [
-    {
+var data = [{
         "oldPic": "https://cdn.shopify.com/s/files/1/2277/5269/products/01_cd3f962f-d6fa-4f52-8a7f-c6054cf0d761_600x_crop_center.jpg?v=1614073498",
         "pic": "https://cdn.shopify.com/s/files/1/2277/5269/products/02_24418f1b-28e8-4ad0-8977-f467d471bb3c_600x_crop_center.jpg?v=1614073498",
         "name": "SILVANA",
@@ -29,7 +28,7 @@ var data = [
     },
     {
         "oldPic": "https://cdn.shopify.com/s/files/1/2277/5269/products/VALENTINO1_600x_crop_center.jpg?v=1612776721",
-        "pic": "https://cdn.shopify.com/s/files/1/2277/5269/products/VALENTINO2_600x_crop_center.jpg?v=1612776721", 
+        "pic": "https://cdn.shopify.com/s/files/1/2277/5269/products/VALENTINO2_600x_crop_center.jpg?v=1612776721",
         "name": "VALENTINO",
         "oldPrice": 6990.00,
         "price": 3990.00
@@ -50,6 +49,13 @@ var data = [
     },
     {
         "oldPic": "https://cdn.shopify.com/s/files/1/2277/5269/products/319A0076_600x_crop_center.jpg?v=1530965239",
+        "pic": "https://cdn.shopify.com/s/files/1/2277/5269/products/2F6A7290_600x_crop_center.jpg?v=1603718596",
+        "name": "DESIGN148",
+        "oldPrice": 2190.00,
+        "price": 1210.00
+    },
+    {
+        "oldPic": "https://cdn.shopify.com/s/files/1/2277/5269/products/2F6A7287_600x_crop_center.jpg?v=1603718596",
         "pic": "https://cdn.shopify.com/s/files/1/2277/5269/products/2F6A7290_600x_crop_center.jpg?v=1603718596",
         "name": "DESIGN148",
         "oldPrice": 2190.00,
